@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eco-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#eco-bg)" opacity="0.95"/>
+  <g transform="translate(60, 45)">
+    <!-- App Window -->
+    <rect width="680" height="410" rx="12" fill="#062419" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+    <circle cx="25" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="22" r="5" fill="#eab308"/>
+    <circle cx="59" cy="22" r="5" fill="#22c55e"/>
+    <text x="340" y="26" fill="#a7f3d0" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">EcoTrack Dashboard - Net Zero Tracker</text>
+
+    <!-- Top Stats -->
+    <g transform="translate(30, 55)">
+      <rect width="190" height="85" rx="8" fill="#0d3b2a"/>
+      <text x="15" y="26" fill="#6ee7b7" font-size="10" font-family="sans-serif">Monthly Carbon Offset</text>
+      <text x="15" y="56" fill="#ffffff" font-size="20" font-family="sans-serif" font-weight="bold">3.42 MT CO₂e</text>
+      <text x="15" y="74" fill="#34d399" font-size="9" font-family="sans-serif">↓ 18% vs last month</text>
+    </g>
+
+    <g transform="translate(245, 55)">
+      <rect width="190" height="85" rx="8" fill="#0d3b2a"/>
+      <text x="15" y="26" fill="#6ee7b7" font-size="10" font-family="sans-serif">Energy Efficiency Score</text>
+      <text x="15" y="56" fill="#ffffff" font-size="20" font-family="sans-serif" font-weight="bold">92 / 100</text>
+      <text x="15" y="74" fill="#34d399" font-size="9" font-family="sans-serif">Grade A - Optimized</text>
+    </g>
+
+    <g transform="translate(460, 55)">
+      <rect width="190" height="85" rx="8" fill="#0d3b2a"/>
+      <text x="15" y="26" fill="#6ee7b7" font-size="10" font-family="sans-serif">Trees Planted</text>
+      <text x="15" y="56" fill="#ffffff" font-size="20" font-family="sans-serif" font-weight="bold">148 Trees</text>
+      <text x="15" y="74" fill="#34d399" font-size="9" font-family="sans-serif">🌳 12 pending</text>
+    </g>
+
+    <!-- Chart Breakdown -->
+    <g transform="translate(30, 160)">
+      <rect width="405" height="225" rx="8" fill="#0d3b2a"/>
+      <text x="20" y="30" fill="#f0fdf4" font-size="12" font-family="sans-serif" font-weight="bold">Emissions Trend (kg/day)</text>
+      <!-- Bars -->
+      <rect x="35" y="140" width="28" height="60" rx="4" fill="#10b981"/>
+      <rect x="85" y="110" width="28" height="90" rx="4" fill="#10b981"/>
+      <rect x="135" y="125" width="28" height="75" rx="4" fill="#10b981"/>
+      <rect x="185" y="80" width="28" height="120" rx="4" fill="#34d399"/>
+      <rect x="235" y="95" width="28" height="105" rx="4" fill="#10b981"/>
+      <rect x="285" y="60" width="28" height="140" rx="4" fill="#34d399"/>
+      <rect x="335" y="50" width="28" height="150" rx="4" fill="#6ee7b7"/>
+    </g>
+
+    <!-- Activity Log -->
+    <g transform="translate(450, 160)">
+      <rect width="200" height="225" rx="8" fill="#0d3b2a"/>
+      <text x="15" y="30" fill="#f0fdf4" font-size="11" font-family="sans-serif" font-weight="bold">Quick Log Actions</text>
+      <rect x="15" y="50" width="170" height="40" rx="6" fill="#134e3a"/>
+      <text x="25" y="74" fill="#a7f3d0" font-size="10" font-family="sans-serif">🚲 Commute: Cycle (5km)</text>
+
+      <rect x="15" y="100" width="170" height="40" rx="6" fill="#134e3a"/>
+      <text x="25" y="124" fill="#a7f3d0" font-size="10" font-family="sans-serif">💡 Solar Generation (12kWh)</text>
+
+      <rect x="15" y="150" width="170" height="40" rx="6" fill="#134e3a"/>
+      <text x="25" y="174" fill="#a7f3d0" font-size="10" font-family="sans-serif">🥗 Plant-based Diet Day</text>
+    </g>
+  </g>
+</svg>

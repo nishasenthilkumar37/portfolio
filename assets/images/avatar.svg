@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#fdba74" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#4f46e5" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle with Glow -->
+  <circle cx="200" cy="200" r="180" fill="url(#avatar-grad)" filter="url(#shadow)"/>
+  <circle cx="200" cy="200" r="172" fill="#0f172a"/>
+
+  <!-- Developer Character Graphic -->
+  <g transform="translate(0, 10)">
+    <!-- Shoulders / Hoodie -->
+    <path d="M 90 360 C 100 270 140 250 200 250 C 260 250 300 270 310 360 Z" fill="#6366f1"/>
+    <!-- Hoodie Inner / Shirt -->
+    <path d="M 160 255 L 200 310 L 240 255 Z" fill="#4338ca"/>
+    <path d="M 175 255 L 200 290 L 225 255 Z" fill="#38bdf8"/>
+
+    <!-- Neck -->
+    <rect x="175" y="200" width="50" height="60" rx="8" fill="url(#skin)"/>
+
+    <!-- Head / Face -->
+    <ellipse cx="200" cy="180" rx="65" ry="75" fill="url(#skin)"/>
+
+    <!-- Stylish Modern Hair -->
+    <path d="M 135 170 C 130 110 160 80 200 80 C 245 80 275 110 265 170 C 255 125 240 100 200 100 C 160 100 145 130 135 170 Z" fill="#1e1b4b"/>
+    <path d="M 130 160 C 120 120 160 90 190 85 C 220 80 260 95 270 140 C 250 110 210 105 170 115 C 150 120 138 140 130 160 Z" fill="#312e81"/>
+
+    <!-- Glasses Frame (Designer / Dev vibe) -->
+    <rect x="150" y="155" width="40" height="28" rx="8" fill="none" stroke="#06b6d4" stroke-width="4"/>
+    <rect x="210" y="155" width="40" height="28" rx="8" fill="none" stroke="#06b6d4" stroke-width="4"/>
+    <line x1="190" y1="168" x2="210" y2="168" stroke="#06b6d4" stroke-width="4"/>
+    <!-- Glass lens reflection -->
+    <line x1="155" y1="162" x2="175" y2="178" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="215" y1="162" x2="235" y2="178" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Eyes -->
+    <circle cx="170" cy="169" r="4" fill="#0f172a"/>
+    <circle cx="230" cy="169" r="4" fill="#0f172a"/>
+
+    <!-- Friendly Smile -->
+    <path d="M 185 215 Q 200 228 215 215" fill="none" stroke="#9a3412" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Headphones on neck -->
+    <path d="M 125 210 C 125 260 275 260 275 210" fill="none" stroke="#334155" stroke-width="12" stroke-linecap="round"/>
+    <rect x="116" y="195" width="20" height="35" rx="8" fill="#0ea5e9"/>
+    <rect x="264" y="195" width="20" height="35" rx="8" fill="#0ea5e9"/>
+  </g>
+
+  <!-- Floating Tech Badges -->
+  <g transform="translate(45, 110)">
+    <rect width="60" height="28" rx="14" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="30" y="18" fill="#a5b4fc" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">&lt;UI/&gt;</text>
+  </g>
+  <g transform="translate(295, 110)">
+    <rect width="60" height="28" rx="14" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="30" y="18" fill="#38bdf8" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">{JS}</text>
+  </g>
+  <g transform="translate(295, 270)">
+    <rect width="65" height="28" rx="14" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="32" y="18" fill="#f472b6" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">🎨 Figma</text>
+  </g>
+  <g transform="translate(40, 270)">
+    <rect width="65" height="28" rx="14" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="32" y="18" fill="#34d399" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">⚡ CSS3</text>
+  </g>
+</svg>

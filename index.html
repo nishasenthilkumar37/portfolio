@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivers | Web Designer & Front-End Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Alex Rivers, a passionate Web Designer and Front-End Developer crafting accessible, responsive, and aesthetically refined digital experiences.">
+  <meta name="keywords" content="Front-End Developer, Web Designer, UI/UX Designer, HTML5, CSS3, JavaScript, Figma, Design Systems, Portfolio">
+  <meta name="author" content="Alex Rivers">
+  
+  <!-- Open Graph Meta for Social Sharing -->
+  <meta property="og:title" content="Alex Rivers | Web Designer & Front-End Developer">
+  <meta property="og:description" content="Explore modern web projects, design systems, and responsive front-end applications crafted with clean code and high aesthetic precision.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/project-aura-ui.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Header & Navigation Bar -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Alex Rivers Home">
+        <span class="brand-logo-icon">&lt;/&gt;</span>
+        <span>Alex<span class="text-gradient">.dev</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <!-- Theme Accent Color Switcher -->
+        <div class="accent-picker-wrapper">
+          <button class="icon-btn" id="accent-toggle-btn" aria-label="Change Accent Color Palette" title="Customize Accent Color">
+            🎨
+          </button>
+          <div class="accent-dropdown" id="accent-dropdown" role="menu">
+            <button class="accent-option" data-accent="indigo" role="menuitem">
+              <span class="accent-dot" style="background: #6366f1;"></span> Indigo
+            </button>
+            <button class="accent-option" data-accent="emerald" role="menuitem">
+              <span class="accent-dot" style="background: #10b981;"></span> Emerald
+            </button>
+            <button class="accent-option" data-accent="cyan" role="menuitem">
+              <span class="accent-dot" style="background: #06b6d4;"></span> Cyan
+            </button>
+            <button class="accent-option" data-accent="violet" role="menuitem">
+              <span class="accent-dot" style="background: #8b5cf6;"></span> Violet
+            </button>
+            <button class="accent-option" data-accent="rose" role="menuitem">
+              <span class="accent-dot" style="background: #f43f5e;"></span> Rose
+            </button>
+            <button class="accent-option" data-accent="amber" role="menuitem">
+              <span class="accent-dot" style="background: #f59e0b;"></span> Amber
+            </button>
+          </div>
+        </div>
+
+        <!-- Light / Dark Mode Toggle -->
+        <button class="icon-btn" id="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+
+        <!-- Let's Talk CTA (Desktop) -->
+        <a href="#contact" class="btn btn-primary btn-sm" style="display: none; @media(min-width: 768px){display:inline-flex;}">
+          Hire Me
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Text Content -->
+          <div class="hero-content">
+            <div class="status-badge">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Available for Junior Roles & Freelance Work</span>
+            </div>
+
+            <h1 class="hero-title">
+              Crafting Clean Code & <br>
+              <span class="text-gradient">Intuitive Interfaces</span>
+            </h1>
+
+            <div style="font-size: 1.35rem; font-weight: 700; color: var(--text-main);">
+              I'm <span class="role-rotator" id="role-rotator-text">Front-End Developer</span>
+            </div>
+
+            <p class="hero-subtitle">
+              Hi! I'm <strong>Alex Rivers</strong>, a detail-driven web designer and front-end developer passionate about transforming thoughtful Figma prototypes into responsive, accessible, and high-performance web applications.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Featured Work</span>
+                <span class="btn-icon" aria-hidden="true">→</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Let's Connect</span>
+                <span class="btn-icon" aria-hidden="true">💬</span>
+              </a>
+              <a href="#about" class="btn btn-outline">
+                <span>Read Story</span>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" title="GitHub">
+                <span aria-hidden="true">&lt;/&gt;</span>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile" title="LinkedIn">
+                <span aria-hidden="true">in</span>
+              </a>
+              <a href="https://figma.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Figma Community" title="Figma">
+                <span aria-hidden="true">❖</span>
+              </a>
+              <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="CodePen Demos" title="CodePen">
+                <span aria-hidden="true">✎</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Showcase Card -->
+          <div class="hero-visual">
+            <div class="avatar-card-wrapper">
+              <div class="avatar-glow-ring" aria-hidden="true"></div>
+              
+              <!-- Floating Tech Badges -->
+              <div class="floating-chip floating-chip-1">
+                <span style="color: var(--color-primary);">✦</span> UI/UX Design System
+              </div>
+              <div class="floating-chip floating-chip-2">
+                <span style="color: var(--color-secondary);">⚡</span> 100% Responsive Code
+              </div>
+
+              <div class="avatar-card">
+                <img src="assets/images/avatar.svg" alt="Alex Rivers Illustration" class="avatar-img" width="380" height="380">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats Bar -->
+        <div class="hero-stats-bar">
+          <div class="stat-item">
+            <div class="stat-number" data-count="15" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="100" data-suffix="%">0</div>
+            <div class="stat-label">Responsive & Accessible</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="40" data-suffix="+">0</div>
+            <div class="stat-label">Reusable UI Components</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="98" data-suffix="%">0</div>
+            <div class="stat-label">Avg. Lighthouse Score</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">About Me</div>
+          <h2 class="section-title">Where Aesthetics Meet <span class="text-gradient">Clean Code</span></h2>
+          <p class="section-description">
+            I believe good web design isn't just about how it looks, but how effortlessly it works for every user.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p>
+              I am a web designer and front-end developer based at the intersection of creative visual design and engineering. My journey began with a curiosity for how user interfaces shape digital interactions, leading me to master both design software and modern web standards.
+            </p>
+            <p>
+              As a beginner professional, I pride myself on writing <strong>modular, semantic HTML5</strong>, mastering <strong>modern CSS (Grid, Flexbox, Custom Properties)</strong>, and developing clean <strong>Vanilla JavaScript</strong> applications.
+            </p>
+            <p>
+              When I'm not designing in Figma or debugging browser devtools, you'll find me exploring open-source UI libraries, testing accessibility screen readers, or reading up on Core Web Vitals performance tuning.
+            </p>
+            <div>
+              <a href="#contact" class="btn btn-primary">
+                <span>Start a Conversation</span>
+                <span class="btn-icon" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Highlight Cards -->
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon" aria-hidden="true">🎨</div>
+              <h3 class="highlight-title">User-Centered Design</h3>
+              <p class="highlight-desc">Wireframing, interactive Figma prototypes, typographic balance, and scalable design token systems.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon" aria-hidden="true">⚡</div>
+              <h3 class="highlight-title">Modern Front-End</h3>
+              <p class="highlight-desc">Semantic HTML5, CSS Grid, Flexbox, ES6+ JavaScript, and dynamic API integrations.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon" aria-hidden="true">♿</div>
+              <h3 class="highlight-title">Accessibility First</h3>
+              <p class="highlight-desc">Ensuring WCAG 2.1 compliance, keyboard navigability, high contrast modes, and ARIA landmarks.</p>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon" aria-hidden="true">🚀</div>
+              <h3 class="highlight-title">Clean Code & Growth</h3>
+              <p class="highlight-desc">Git version control, DRY principles, component reusability, and continuous self-learning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills & Tech Stack Section -->
+    <section class="section" id="skills" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Skills & Toolkit</div>
+          <h2 class="section-title">My Technical <span class="text-gradient">Arsenal</span></h2>
+          <p class="section-description">
+            The core tools, languages, and methodologies I use to design and engineer seamless web experiences.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: UI/UX & Visual Design -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box" aria-hidden="true">❖</div>
+              <h3 class="category-title">UI / UX Design</h3>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Figma (Prototyping & Variants)</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Design Systems & Tokens</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="85%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Wireframing & User Flow</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="88%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Typography & Color Theory</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="92%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tag-cloud">
+              <span class="tag">Auto-Layout</span>
+              <span class="tag">Component Props</span>
+              <span class="tag">Responsive Grids</span>
+              <span class="tag">Micro-Interactions</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Front-End Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box" aria-hidden="true">&lt;/&gt;</div>
+              <h3 class="category-title">Front-End Dev</h3>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>HTML5 & Semantic Structure</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="95%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>CSS3 (Flex, Grid, Variables)</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="92%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>JavaScript (ES6+, DOM, Async)</span>
+                  <span>84%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="84%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Web Accessibility (WCAG / a11y)</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="88%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tag-cloud">
+              <span class="tag">Fetch API</span>
+              <span class="tag">LocalStorage</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">React Basics</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Developer Tools & Workflow -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box" aria-hidden="true">🛠</div>
+              <h3 class="category-title">Workflow & Tools</h3>
+            </div>
+
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Git & GitHub Workflow</span>
+                  <span>86%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="86%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Chrome DevTools & Auditing</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>VS Code & Extensions</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="95%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Vercel / Netlify Deployment</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="88%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tag-cloud">
+              <span class="tag">npm</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Responsive Testing</span>
+              <span class="tag">Markdown</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects & Portfolio Showcase -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Selected Projects</div>
+          <h2 class="section-title">Featured <span class="text-gradient">Case Studies</span></h2>
+          <p class="section-description">
+            A curated collection of web design systems, interactive applications, and API-powered prototypes.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="projects-filter-bar" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (6)</button>
+          <button class="filter-btn" data-filter="web-app" role="tab" aria-selected="false">Web Apps & Front-End</button>
+          <button class="filter-btn" data-filter="design-system" role="tab" aria-selected="false">Design Systems</button>
+          <button class="filter-btn" data-filter="ui-ux" role="tab" aria-selected="false">UI/UX & Prototypes</button>
+        </div>
+
+        <!-- Projects Grid Container (Dynamic Injection) -->
+        <div class="projects-grid" id="projects-grid-container">
+          <!-- Fallback noscript rendering for search engines & accessibility -->
+          <noscript>
+            <p>Please enable JavaScript to view the full interactive project showcase and case studies.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Design & Development Process -->
+    <section class="section" id="process" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">How I Work</div>
+          <h2 class="section-title">From Concept to <span class="text-gradient">Production</span></h2>
+          <p class="section-description">
+            A structured 4-step framework that ensures aesthetic quality, code robustness, and timely delivery.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <span class="process-step-number">01</span>
+            <h3 class="process-card-title">Discovery & Wireframing</h3>
+            <p class="process-card-desc">Understanding user needs, outlining information architecture, and sketching low-fidelity wireframes.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-step-number">02</span>
+            <h3 class="process-card-title">Design Systems & UI</h3>
+            <p class="process-card-desc">Defining color palettes, typography scales, Figma components, and interactive high-fidelity mockups.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-step-number">03</span>
+            <h3 class="process-card-title">Semantic Front-End</h3>
+            <p class="process-card-desc">Translating Figma designs into clean, responsive HTML5, modern CSS, and modular Vanilla JavaScript.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-step-number">04</span>
+            <h3 class="process-card-title">Testing & Launch</h3>
+            <p class="process-card-desc">Cross-browser verification, WCAG accessibility validation, Lighthouse audit, and deployment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Learning Journey & Milestones -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Learning Journey</div>
+          <h2 class="section-title">Education & <span class="text-gradient">Milestones</span></h2>
+          <p class="section-description">
+            My continuous evolution as a developer, designer, and curious technologist.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2024 - Present</span>
+              <h3 class="timeline-title">Front-End Developer & UI Designer</h3>
+              <div class="timeline-subtitle">Independent Projects & Open Source</div>
+              <p class="timeline-desc">
+                Building responsive web applications, authoring accessible design systems in Figma and CSS, and mastering modern front-end performance principles.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2023 - 2024</span>
+              <h3 class="timeline-title">Front-End Web Development Specialization</h3>
+              <div class="timeline-subtitle">Modern JavaScript (ES6+), CSS Architecture & APIs</div>
+              <p class="timeline-desc">
+                Completed intensive hands-on coursework in asynchronous JavaScript, DOM manipulation, responsive layouts (CSS Grid, Flexbox), and Git collaboration workflows.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2023</span>
+              <h3 class="timeline-title">UI/UX Design Certification</h3>
+              <div class="timeline-subtitle">User Research, Prototyping & Design Systems</div>
+              <p class="timeline-desc">
+                Mastered foundational principles of human-computer interaction, user persona mapping, Figma design token systems, and accessibility guidelines (WCAG).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Testimonials & Feedback -->
+    <section class="section" id="testimonials" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Recommendations</div>
+          <h2 class="section-title">What Mentors & <span class="text-gradient">Collaborators Say</span></h2>
+          <p class="section-description">
+            Feedback on my work ethic, attention to detail, and collaborative spirit.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-icon" aria-hidden="true">“</div>
+            <p class="testimonial-quote">
+              An exceptional eye for layout balance, color harmony, and semantic code structure. Creates websites that are not only beautiful but also accessible and blazing fast.
+            </p>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">EV</div>
+              <div>
+                <div class="author-name">Elena Vance</div>
+                <div class="author-role">Senior Product Designer, Studio Craft</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon" aria-hidden="true">“</div>
+            <p class="testimonial-quote">
+              Very impressed by the clean code quality, attention to responsiveness, and eagerness to adopt modern CSS best practices. A rising front-end talent!
+            </p>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">MC</div>
+              <div>
+                <div class="author-name">Marcus Chen</div>
+                <div class="author-role">Lead Front-End Engineer, TechPulse Labs</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon" aria-hidden="true">“</div>
+            <p class="testimonial-quote">
+              Delivered our landing page wireframes and interactive prototype ahead of schedule. The design system tokens made developer handoff effortless.
+            </p>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">SJ</div>
+              <div>
+                <div class="author-name">Sarah Jenkins</div>
+                <div class="author-role">Product Manager, Novasphere</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contact & Collaboration Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Get In Touch</div>
+          <h2 class="section-title">Let's Build Something <span class="text-gradient">Great Together</span></h2>
+          <p class="section-description">
+            Have a project in mind, an open junior role, or just want to talk about design & front-end? My inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Details Panel -->
+          <div class="contact-info-panel">
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">✉</div>
+              <div class="contact-card-detail">
+                <span class="contact-card-label">Email Address</span>
+                <span class="contact-card-value">alex.developer@example.com</span>
+              </div>
+              <button class="copy-badge-btn" id="copy-email-btn" data-email="alex.developer@example.com" title="Copy to clipboard">
+                Copy
+              </button>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">📍</div>
+              <div class="contact-card-detail">
+                <span class="contact-card-label">Location & Timezone</span>
+                <span class="contact-card-value">San Francisco, CA (Remote Friendly / UTC-8)</span>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">💼</div>
+              <div class="contact-card-detail">
+                <span class="contact-card-label">Current Availability</span>
+                <span class="contact-card-value" style="color: var(--color-success);">Open to Full-time, Contract & Freelance</span>
+              </div>
+            </div>
+
+            <div style="margin-top: var(--space-md);">
+              <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: var(--space-sm); color: var(--text-main);">Find Me Online</h3>
+              <div class="hero-socials">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">&lt;/&gt;</a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">in</a>
+                <a href="https://figma.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="Figma">❖</a>
+                <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer" class="social-link" title="CodePen">✎</a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter / X">𝕏</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Interactive Contact Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. jane@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Project Inquiry / Job Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" class="form-textarea" maxlength="500" placeholder="Tell me about your project, timeline, or team..." required></textarea>
+                <div class="form-hint">
+                  <span>Please be as detailed as possible</span>
+                  <span id="char-count">0 / 500</span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%;">
+                <span>Send Message</span>
+                <span class="btn-icon" aria-hidden="true">✈</span>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Case Study Modal Dialog -->
+  <dialog id="project-modal" class="modal-dialog" aria-labelledby="modal-project-title">
+    <div class="modal-header">
+      <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Case Study Modal">✕</button>
+    </div>
+    <div id="modal-project-body" class="modal-body">
+      <!-- Injected via JavaScript -->
+    </div>
+    <div id="modal-project-footer" class="modal-footer">
+      <!-- Injected via JavaScript -->
+    </div>
+  </dialog>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="brand-logo-icon">&lt;/&gt;</span>
+            <span>Alex<span class="text-gradient">.dev</span></span>
+          </a>
+          <p class="footer-desc">
+            Passionate Web Designer & Front-End Developer dedicated to crafting accessible, beautiful, and performant web experiences.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#skills" class="footer-link">Skills & Stack</a></li>
+            <li><a href="#projects" class="footer-link">Projects & Case Studies</a></li>
+            <li><a href="#journey" class="footer-link">Timeline & Journey</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Connect & Socials</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn Network</a></li>
+            <li><a href="https://figma.com/" target="_blank" rel="noopener noreferrer" class="footer-link">Figma Community</a></li>
+            <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer" class="footer-link">CodePen Demos</a></li>
+            <li><a href="#contact" class="footer-link">Send Direct Message</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alex Rivers. All rights reserved. Crafted with clean HTML5, CSS3 & JavaScript.</p>
+        <p>Built with ❤️ & Web Standards</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button id="back-to-top-btn" class="back-to-top" aria-label="Back to Top" title="Back to Top">
+    ↑
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

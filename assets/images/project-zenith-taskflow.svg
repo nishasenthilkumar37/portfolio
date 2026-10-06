@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="zenith-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#zenith-bg)" opacity="0.95"/>
+  <g transform="translate(60, 45)">
+    <!-- Window Frame -->
+    <rect width="680" height="410" rx="12" fill="#0b1329" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+    <!-- Controls -->
+    <circle cx="25" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="22" r="5" fill="#eab308"/>
+    <circle cx="59" cy="22" r="5" fill="#22c55e"/>
+    <text x="340" y="26" fill="#93c5fd" font-size="11" font-family="sans-serif" font-weight="bold" text-anchor="middle">Zenith TaskFlow - Sprint 4</text>
+    
+    <!-- Kanban Columns -->
+    <!-- Column 1: To Do -->
+    <g transform="translate(25, 55)">
+      <rect width="200" height="330" rx="8" fill="#131e3a"/>
+      <rect x="15" y="15" width="8" height="8" rx="4" fill="#60a5fa"/>
+      <text x="30" y="23" fill="#e2e8f0" font-size="12" font-family="sans-serif" font-weight="bold">To Do (3)</text>
+      <!-- Task 1 -->
+      <g transform="translate(12, 40)">
+        <rect width="176" height="75" rx="6" fill="#1e293b"/>
+        <rect x="10" y="12" width="120" height="8" rx="4" fill="#f8fafc"/>
+        <rect x="10" y="28" width="90" height="6" rx="3" fill="#64748b"/>
+        <rect x="10" y="48" width="50" height="16" rx="4" fill="#3b82f6" fill-opacity="0.3"/>
+        <text x="35" y="60" fill="#93c5fd" font-size="8" font-family="sans-serif" text-anchor="middle">Feature</text>
+      </g>
+      <!-- Task 2 -->
+      <g transform="translate(12, 125)">
+        <rect width="176" height="75" rx="6" fill="#1e293b"/>
+        <rect x="10" y="12" width="135" height="8" rx="4" fill="#f8fafc"/>
+        <rect x="10" y="28" width="80" height="6" rx="3" fill="#64748b"/>
+        <rect x="10" y="48" width="45" height="16" rx="4" fill="#ef4444" fill-opacity="0.3"/>
+        <text x="32" y="60" fill="#fca5a5" font-size="8" font-family="sans-serif" text-anchor="middle">Bug</text>
+      </g>
+    </g>
+
+    <!-- Column 2: In Progress -->
+    <g transform="translate(240, 55)">
+      <rect width="200" height="330" rx="8" fill="#131e3a"/>
+      <rect x="15" y="15" width="8" height="8" rx="4" fill="#f59e0b"/>
+      <text x="30" y="23" fill="#e2e8f0" font-size="12" font-family="sans-serif" font-weight="bold">In Progress (2)</text>
+      <!-- Task Active -->
+      <g transform="translate(12, 40)">
+        <rect width="176" height="90" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+        <rect x="10" y="12" width="140" height="8" rx="4" fill="#38bdf8"/>
+        <rect x="10" y="28" width="110" height="6" rx="3" fill="#64748b"/>
+        <!-- Progress bar -->
+        <rect x="10" y="45" width="156" height="6" rx="3" fill="#334155"/>
+        <rect x="10" y="45" width="110" height="6" rx="3" fill="#38bdf8"/>
+        <text x="10" y="70" fill="#94a3b8" font-size="9" font-family="sans-serif">Due in 2 days</text>
+      </g>
+    </g>
+
+    <!-- Column 3: Done -->
+    <g transform="translate(455, 55)">
+      <rect width="200" height="330" rx="8" fill="#131e3a"/>
+      <rect x="15" y="15" width="8" height="8" rx="4" fill="#10b981"/>
+      <text x="30" y="23" fill="#e2e8f0" font-size="12" font-family="sans-serif" font-weight="bold">Completed (5)</text>
+      <!-- Done Task -->
+      <g transform="translate(12, 40)">
+        <rect width="176" height="70" rx="6" fill="#1e293b"/>
+        <circle cx="20" cy="22" r="6" fill="#10b981"/>
+        <rect x="34" y="18" width="100" height="8" rx="4" fill="#94a3b8"/>
+        <rect x="12" y="42" width="60" height="16" rx="4" fill="#10b981" fill-opacity="0.2"/>
+        <text x="42" y="54" fill="#6ee7b7" font-size="8" font-family="sans-serif" text-anchor="middle">Verified</text>
+      </g>
+    </g>
+  </g>
+</svg>
