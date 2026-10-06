@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mba-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="50%" stop-color="#4338ca" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#mba-bg)"/>
+
+  <g transform="translate(60, 40)">
+    <rect width="680" height="420" rx="14" fill="#090d1a" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <!-- Controls -->
+    <circle cx="25" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="22" r="5" fill="#eab308"/>
+    <circle cx="59" cy="22" r="5" fill="#22c55e"/>
+    <text x="340" y="26" fill="#818cf8" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" text-anchor="middle">MBA Business Analytics &amp; Enterprise Growth Dashboard</text>
+
+    <!-- Top KPI metrics -->
+    <g transform="translate(30, 50)">
+      <rect width="140" height="80" rx="8" fill="#131b33"/>
+      <text x="15" y="25" fill="#94a3b8" font-size="10" font-family="sans-serif">Revenue Growth</text>
+      <text x="15" y="55" fill="#10b981" font-size="20" font-family="sans-serif" font-weight="900">+34.8%</text>
+      <text x="15" y="72" fill="#34d399" font-size="9" font-family="sans-serif">↑ Predictive Sales</text>
+
+      <rect x="160" y="0" width="140" height="80" rx="8" fill="#131b33"/>
+      <text x="175" y="25" fill="#94a3b8" font-size="10" font-family="sans-serif">SQL Query Perf</text>
+      <text x="175" y="55" fill="#38bdf8" font-size="20" font-family="sans-serif" font-weight="900">12ms</text>
+      <text x="175" y="72" fill="#38bdf8" font-size="9" font-family="sans-serif">⚡ Index Optimized</text>
+
+      <rect x="320" y="0" width="140" height="80" rx="8" fill="#131b33"/>
+      <text x="335" y="25" fill="#94a3b8" font-size="10" font-family="sans-serif">Decision Accuracy</text>
+      <text x="335" y="55" fill="#fbbf24" font-size="20" font-family="sans-serif" font-weight="900">96.4%</text>
+      <text x="335" y="72" fill="#fbbf24" font-size="9" font-family="sans-serif">📊 Python Model</text>
+
+      <rect x="480" y="0" width="140" height="80" rx="8" fill="#131b33"/>
+      <text x="495" y="25" fill="#94a3b8" font-size="10" font-family="sans-serif">Operational ROI</text>
+      <text x="495" y="55" fill="#c084fc" font-size="20" font-family="sans-serif" font-weight="900">4.2x</text>
+      <text x="495" y="72" fill="#c084fc" font-size="9" font-family="sans-serif">🎯 Tech + MBA Synergy</text>
+    </g>
+
+    <!-- Main Chart & SQL Code Integration -->
+    <g transform="translate(30, 145)">
+      <!-- Chart Area -->
+      <rect width="360" height="250" rx="8" fill="#131b33"/>
+      <text x="20" y="30" fill="#f8fafc" font-size="12" font-family="sans-serif" font-weight="bold">Quarterly Business Performance Analysis</text>
+      <!-- Trend line -->
+      <path d="M 30 200 L 90 170 L 150 185 L 210 120 L 270 135 L 330 65" fill="none" stroke="#6366f1" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 30 200 L 90 170 L 150 185 L 210 120 L 270 135 L 330 65 L 330 220 L 30 220 Z" fill="#6366f1" fill-opacity="0.15"/>
+      <circle cx="330" cy="65" r="6" fill="#10b981"/>
+      <text x="250" y="55" fill="#10b981" font-size="10" font-family="sans-serif" font-weight="bold">Target Exceeded</text>
+    </g>
+
+    <!-- SQL & Python Logic Panel (Right) -->
+    <g transform="translate(405, 145)">
+      <rect width="245" height="250" rx="8" fill="#131b33"/>
+      <text x="15" y="28" fill="#a5b4fc" font-size="11" font-family="sans-serif" font-weight="bold">💻 SQL Aggregation &amp; Logic</text>
+      <rect x="15" y="42" width="215" height="190" rx="6" fill="#0b1021"/>
+      <text x="25" y="65" fill="#f43f5e" font-size="9" font-family="monospace">SELECT</text>
+      <text x="65" y="65" fill="#e2e8f0" font-size="9" font-family="monospace">dept_name, AVG(kpi)</text>
+      <text x="25" y="85" fill="#f43f5e" font-size="9" font-family="monospace">FROM</text>
+      <text x="55" y="85" fill="#38bdf8" font-size="9" font-family="monospace">enterprise_metrics</text>
+      <text x="25" y="105" fill="#f43f5e" font-size="9" font-family="monospace">WHERE</text>
+      <text x="60" y="105" fill="#fbbf24" font-size="9" font-family="monospace">fiscal_year = 2026</text>
+      <text x="25" y="125" fill="#f43f5e" font-size="9" font-family="monospace">GROUP BY</text>
+      <text x="75" y="125" fill="#e2e8f0" font-size="9" font-family="monospace">dept_name</text>
+      <text x="25" y="145" fill="#f43f5e" font-size="9" font-family="monospace">ORDER BY</text>
+      <text x="75" y="145" fill="#10b981" font-size="9" font-family="monospace">ROI DESC;</text>
+
+      <rect x="25" y="170" width="195" height="24" rx="4" fill="#4f46e5"/>
+      <text x="122" y="186" fill="#ffffff" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">Data-Driven Strategy</text>
+    </g>
+  </g>
+</svg>

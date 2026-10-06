@@ -1,174 +1,168 @@
 /**
- * Portfolio Projects & Case Studies Data
- * Easily customizable for adding new projects, screenshots, or updating links.
+ * Portfolio Projects, Education, & Case Studies Data for Nisha S
+ * BSc (Information Technology) & MBA Scholar | Front-End & Software Developer
  */
 
 const portfolioProjects = [
   {
+    id: "talking-dictionary",
+    title: "Talking Dictionary & Accessibility Thesaurus",
+    tagline: "Voice-Assisted Lexical Engine for Rapid Recall & Accessibility",
+    category: "software-dev",
+    categoryLabel: "Python / Java & Accessibility",
+    image: "assets/images/project-talking-dictionary.svg",
+    badge: "Key Project",
+    shortDesc: "An interactive dictionary and thesaurus application featuring instant synonym/antonym recall and voice note audio playback for physically disabled and visually impaired learners.",
+    fullDesc: "Talking Dictionary solves the cognitive challenge of recalling vocabulary, synonyms, and antonyms under pressure. Instead of carrying physical workbooks, users get instant word lookups with built-in voice note playback to empower differently-abled students and professionals to learn effortlessly in one click.",
+    role: "Core Developer & UI Architect",
+    duration: "Academic Project",
+    metrics: "1-Click Voice Playback • Full Thesaurus Index • a11y Accessible",
+    challenge: "Human memory frequently struggles with rapid synonym and antonym recall, and conventional dictionaries lack accessible auditory feedback for visually impaired learners.",
+    solution: "Built an intuitive search index with synthesized voice playback, structured synonym/antonym categorization, and an accessible high-contrast UI.",
+    tags: ["Python", "Java", "HTML/CSS", "Voice Synthesis", "Accessibility (a11y)", "SQL Database"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/nisha-official",
+    figmaUrl: null
+  },
+  {
+    id: "news-headlines",
+    title: "News Headlines - Live Android & Web Platform",
+    tagline: "Real-Time News Aggregation & Categorized Feed App",
+    category: "mobile-web",
+    categoryLabel: "Android & Web Dev (Project Lead)",
+    image: "assets/images/project-news-headlines.svg",
+    badge: "Project Lead",
+    shortDesc: "Led the design and development of an Android and web application displaying real-time news headlines categorized across tech, business, and global affairs using experimental learning principles.",
+    fullDesc: "Engineered during experimental learning coursework as the Project Lead. Coordinated feature delivery, designed mobile-first user interfaces, implemented responsive news feed scrapers/parsers, and ensured seamless synchronization across devices.",
+    role: "Project Lead & Front-End Developer",
+    duration: "Team Project",
+    metrics: "Led 4-Member Team • Sub-200ms Feed Parsing • 100% On-Time Delivery",
+    challenge: "Managing team sprints while developing a lightweight, responsive mobile and web interface that dynamically parses news headlines without lag.",
+    solution: "Applied experimental learning principles, established modular component architecture, and created a responsive UI with asynchronous API integrations.",
+    tags: ["Android Development", "Java", "HTML5 & CSS3", "Team Leadership", "REST APIs"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/nisha-official",
+    figmaUrl: null
+  },
+  {
+    id: "client-server-presentation",
+    title: "Client-Server Architecture & Distributed Systems",
+    tagline: "Co-Curricular Technical Model & System Architecture",
+    category: "systems",
+    categoryLabel: "Network & Systems Architecture",
+    image: "assets/images/project-client-server.svg",
+    badge: "Co-Curricular Honor",
+    shortDesc: "College-level technical seminar and interactive architectural model dissecting client-server protocols, request-response lifecycles, and database tiers.",
+    fullDesc: "Presented an exhaustive technical demonstration on Client-Server distributed computing models at Emerald Heights College for Women. Illustrated TCP/IP socket communication, RESTful HTTP request pipelining, ACID database transactions, and scalable web servers.",
+    role: "Sole Presenter & Technical Author",
+    duration: "College Tech Symposium",
+    metrics: "College-Wide Commendation • Multi-Tier Architecture Blueprint",
+    challenge: "Deconstructing complex networking protocols and distributed system layers into intuitive visual models for peers and faculty.",
+    solution: "Designed comprehensive multi-tier diagrams, simulated live client-to-server request packets, and demonstrated SQL query execution flow.",
+    tags: ["Client-Server Protocols", "SQL Database", "System Design", "Technical Presentation", "Networking"],
+    demoUrl: "#",
+    githubUrl: null,
+    figmaUrl: null
+  },
+  {
+    id: "mba-business-analytics",
+    title: "MBA Business Analytics & Growth Dashboard",
+    tagline: "Bridging Data Science with Strategic Decision Making",
+    category: "analytics",
+    categoryLabel: "MBA & Data Analytics",
+    image: "assets/images/project-mba-analytics.svg",
+    badge: "MBA Project",
+    shortDesc: "Strategic business intelligence prototype analyzing sales funnels, predictive revenue streams, and inventory turnover through optimized SQL queries and Python analytics.",
+    fullDesc: "Combining technical software engineering with MBA business acumen. Built to help leadership teams evaluate KPIs, optimize operational margins, and uncover cross-department bottlenecks using data visualization and relational database modeling.",
+    role: "MBA Researcher & Data Analyst",
+    duration: "Current MBA Work",
+    metrics: "Predictive Sales Analysis • SQL Performance Indexing • 96% Model Accuracy",
+    challenge: "Raw business data is often siloed, making it difficult for non-technical executives to derive actionable operational insights.",
+    solution: "Constructed automated SQL aggregation scripts, interactive metric graphs, and synthesized executive decision summaries.",
+    tags: ["Business Analytics", "SQL", "Python", "Problem Solving", "Strategic Management", "MBA"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/nisha-official",
+    figmaUrl: null
+  },
+  {
     id: "aura-ui",
-    title: "Aura UI - Modern Design System",
-    tagline: "Accessible UI Component Library & Design Tokens",
-    category: "design-system",
-    categoryLabel: "Design System & UI",
+    title: "Aura UI - Accessible Design System & Component Kit",
+    tagline: "Modern Front-End Component Architecture with WCAG AAA Compliance",
+    category: "front-end",
+    categoryLabel: "Front-End & UI/UX",
     image: "assets/images/project-aura-ui.svg",
-    badge: "Featured Project",
-    shortDesc: "A sleek, accessible design system with 40+ tokens, reusable components, WCAG AAA compliance, and Figma component parity.",
-    fullDesc: "A comprehensive design system built from the ground up to bridge the gap between Figma design files and front-end code. It establishes unified typography scales, responsive spacing tokens, accessible contrast ratios, and interactive component states (hover, focus-visible, active, disabled).",
-    role: "Lead UI Designer & Front-End Dev",
-    duration: "4 Weeks",
-    metrics: "40+ Components • 100% WCAG 2.1 AAA Compliant • 98% Lighthouse Score",
-    challenge: "Design consistency across projects often suffers due to fragmented color palettes and lack of standardized accessible components.",
-    solution: "Created semantic design tokens with CSS custom properties and matching Figma variants. Built keyboard-navigable components with rigorous ARIA states.",
-    tags: ["Figma", "CSS3 Variables", "HTML5 Semantics", "Web Accessibility (a11y)", "Storybook Vibe"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/",
-    figmaUrl: "https://figma.com/"
-  },
-  {
-    id: "novasphere",
-    title: "Novasphere - SaaS Landing Experience",
-    tagline: "High-Converting Dark Mode Product Page",
-    category: "web-app",
-    categoryLabel: "Front-End & UI",
-    image: "assets/images/project-novasphere.svg",
-    badge: "Trending",
-    shortDesc: "Modern SaaS marketing landing page engineered with responsive CSS Grid layouts, glassmorphic cards, and micro-interactions.",
-    fullDesc: "Designed to boost user engagement and product conversions. Features dynamic pricing calculators, interactive feature walkthrough tabs, glowing neon borders, and ultra-smooth CSS scroll transitions.",
-    role: "Front-End Developer & UI Designer",
+    badge: "Web Design",
+    shortDesc: "A modular, accessible UI design system featuring reusable web components, CSS design tokens, and smooth micro-interactions.",
+    fullDesc: "Created to establish clean design standards for modern web apps. Integrates responsive typography, dark/light theme tokens, accessible ARIA states, and interactive button variants.",
+    role: "Front-End Designer & Developer",
     duration: "3 Weeks",
-    metrics: "Sub-second LCP (0.8s) • 100/100 Performance Score • Zero Framework Overhead",
-    challenge: "Create a visually rich dark-mode SaaS page that looks premium while maintaining fast load times on low-power mobile devices.",
-    solution: "Used pure CSS hardware-accelerated transforms, modern CSS layout techniques (`display: grid` with `subgrid`), and optimized SVG graphics.",
-    tags: ["HTML5", "Modern CSS", "JavaScript (ES6+)", "Responsive Design", "UI/UX"],
+    metrics: "40+ Components • WCAG AAA Contrast • 100% Mobile Responsive",
+    challenge: "Ensuring visual consistency, keyboard accessibility, and snappy rendering across all screen sizes.",
+    solution: "Employed CSS Custom Properties, semantic HTML5 structure, and flexible CSS Grid layouts.",
+    tags: ["HTML5", "CSS3 Variables", "JavaScript", "UI/UX Design", "Responsive Layout"],
     demoUrl: "#",
-    githubUrl: "https://github.com/",
-    figmaUrl: "https://figma.com/"
-  },
-  {
-    id: "zenith-taskflow",
-    title: "Zenith TaskFlow - Kanban Workspace",
-    tagline: "Productivity Board with LocalStorage & Drag-and-Drop",
-    category: "web-app",
-    categoryLabel: "Interactive App",
-    image: "assets/images/project-zenith-taskflow.svg",
-    badge: "Interactive Demo",
-    shortDesc: "Intuitive task management app with custom column boards, priority badges, state persistence, and keyboard shortcuts.",
-    fullDesc: "A modular, distraction-free productivity app designed to keep solo developers and designers organized. Supports custom task filtering, tag-based search, dynamic task progress meters, and offline persistence via browser LocalStorage.",
-    role: "Front-End Developer",
-    duration: "2 Weeks",
-    metrics: "Full Offline Support • 0 External JS Libraries • Instant Search",
-    challenge: "Handling dynamic DOM updates and persistent client-side state without the overhead of heavy SPA frameworks.",
-    solution: "Implemented clean Model-View separation in Vanilla JavaScript with event delegation and robust state serialisation.",
-    tags: ["Vanilla JavaScript", "DOM API", "LocalStorage API", "CSS Flexbox", "CSS Grid"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/",
+    githubUrl: "https://github.com/nisha-official",
     figmaUrl: null
-  },
-  {
-    id: "foodie-haven",
-    title: "FoodieHaven - Gourmet Recipe Finder",
-    tagline: "API-Powered Dynamic Recipe & Nutrition Explorer",
-    category: "web-app",
-    categoryLabel: "API Integration",
-    image: "assets/images/project-foodiehaven.svg",
-    badge: "API Powered",
-    shortDesc: "Recipe discovery platform integrating external REST APIs with debounced search, dietary filters, and nutritional breakdowns.",
-    fullDesc: "Allows culinary enthusiasts to browse thousands of global dishes. Features asynchronous data fetching, graceful loading skeleton states, interactive ingredient checklists, and responsive card grids.",
-    role: "Front-End Developer",
-    duration: "3 Weeks",
-    metrics: "Async REST API Fetching • Debounced Search • Skeleton Loading States",
-    challenge: "Preventing UI jank during rapid search queries and gracefully handling API rate limits and network errors.",
-    solution: "Created custom JavaScript debounce utilities, client-side query caching, and user-friendly error fallback states.",
-    tags: ["JavaScript (Async/Await)", "REST APIs", "Fetch API", "CSS Animations", "Mobile First"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/",
-    figmaUrl: null
-  },
-  {
-    id: "ecotrack",
-    title: "EcoTrack - Carbon Footprint Dashboard",
-    tagline: "Data Visualisation & Sustainability Metrics",
-    category: "ui-ux",
-    categoryLabel: "UI/UX & Data Viz",
-    image: "assets/images/project-ecotrack.svg",
-    badge: "Case Study",
-    shortDesc: "Interactive environmental dashboard featuring custom SVG charts, emission calculators, and goal tracking milestones.",
-    fullDesc: "A case study and interactive UI prototype built to help individuals monitor and reduce their daily ecological footprint. Includes interactive sliders for transport/energy consumption and instant comparative visualizations.",
-    role: "UI/UX Designer & Prototyper",
-    duration: "2 Weeks",
-    metrics: "Custom Dynamic SVG Charts • User Tested with 15 Participants",
-    challenge: "Translating complex climate metric equations into simple, engaging, and motivating visual charts.",
-    solution: "Conducted user research wireframing in Figma, followed by an interactive dashboard built with semantic HTML and dynamic SVG bar charts.",
-    tags: ["Figma Wireframing", "SVG Graphics", "User Research", "Data Visualization", "JavaScript"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/",
-    figmaUrl: "https://figma.com/"
-  },
-  {
-    id: "pixelcraft",
-    title: "PixelCraft - Creative Agency Prototype",
-    tagline: "Bold Typography & Expressive Motion UI",
-    category: "ui-ux",
-    categoryLabel: "Creative Design",
-    image: "assets/images/project-pixelcraft.svg",
-    badge: "Experimental",
-    shortDesc: "Experimental agency portfolio concept featuring bold brutalist typography, magnetic button hover physics, and fluid theme transitions.",
-    fullDesc: "An exploratory design exploration focusing on micro-interactions, editorial typography, and high-impact visual hierarchy. Tested interactive mouse glow effects and accessible color contrast pairings.",
-    role: "UI/UX Designer & Creative Coder",
-    duration: "2 Weeks",
-    metrics: "60 FPS Micro-Interactions • Custom Cursor & Physics",
-    challenge: "Balancing experimental visual flair with clean typography readability and mobile responsiveness.",
-    solution: "Crafted modular typographic scale with CSS clamp() and graceful fallbacks for mobile touch devices.",
-    tags: ["Creative Direction", "Micro-Interactions", "CSS Transitions", "Figma", "Web Design"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/",
-    figmaUrl: "https://figma.com/"
   }
 ];
 
-// Testimonials / Recommendations Data
+// Education & Academic Milestones for Nisha S
+const portfolioEducation = [
+  {
+    degree: "Master of Business Administration (MBA)",
+    institution: "Currently Pursuing",
+    period: "2024 - Present",
+    score: "In Progress",
+    location: "Tamil Nadu, India",
+    highlights: "Specializing in Technology Management, Business Analytics, Project Leadership, and Strategic Operations to bridge engineering with business innovation."
+  },
+  {
+    degree: "BSc. Information Technology (BSc IT)",
+    institution: "Emerald Heights College for Women's Ooty",
+    period: "Sep 2020 – May 2023",
+    score: "CGPA: 7.8 / 10",
+    location: "Ooty, Tamil Nadu",
+    highlights: "Graduated with distinction. Core subjects included Python, Java, C, Web Development (HTML/CSS), Relational Databases (SQL), Operating Systems, and Software Engineering."
+  },
+  {
+    degree: "Higher Secondary Certificate (HSC - 12th)",
+    institution: "Government Higher Secondary School, Thuneri",
+    period: "Jun 2019 – Apr 2020",
+    score: "Percentage: 61%",
+    location: "Thuneri, Nilgiris",
+    highlights: "Completed higher secondary curriculum with mathematics and science foundations."
+  },
+  {
+    degree: "Secondary School Leaving Certificate (SSLC - 10th)",
+    institution: "Government Higher Secondary School, Thuneri",
+    period: "Jun 2017 – Apr 2018",
+    score: "Percentage: 76%",
+    location: "Thuneri, Nilgiris",
+    highlights: "Strong academic foundation in science, mathematics, and computer literacy."
+  }
+];
+
+// Professional & Peer Recommendations
 const portfolioTestimonials = [
   {
-    quote: "An exceptional eye for layout balance, color harmony, and semantic code structure. Creates websites that are not only beautiful but also accessible and blazing fast.",
-    author: "Elena Vance",
-    role: "Senior Product Designer",
-    company: "Studio Craft",
-    avatar: "EV"
+    quote: "Nisha demonstrated remarkable technical prowess and leadership as the Project Lead for our News Headlines initiative. Her ability to coordinate development sprints while mastering web and Android skills is commendable.",
+    author: "Academic Project Supervisor",
+    role: "Department of Information Technology",
+    company: "Emerald Heights College for Women",
+    avatar: "IT"
   },
   {
-    quote: "Very impressed by the clean code quality, attention to responsiveness, and eagerness to adopt modern CSS best practices. A rising front-end talent!",
-    author: "Marcus Chen",
-    role: "Lead Front-End Engineer",
-    company: "TechPulse Labs",
-    avatar: "MC"
+    quote: "Her presentation on Client-Server architecture was one of the most lucid and technically comprehensive demonstrations in our seminar. She possesses great communication and analytical clarity.",
+    author: "Symposium Evaluator",
+    role: "Computer Science Faculty",
+    company: "College Symposium Committee",
+    avatar: "CS"
   },
   {
-    quote: "Delivered our landing page wireframes and interactive prototype ahead of schedule. The design system tokens made handoff effortless.",
-    author: "Sarah Jenkins",
-    role: "Product Manager",
-    company: "Novasphere AI",
-    avatar: "SJ"
-  }
-];
-
-// Learning Journey & Milestones Data
-const portfolioTimeline = [
-  {
-    year: "2024 - Present",
-    title: "Front-End Developer & UI Designer",
-    subtitle: "Freelance & Open Source Projects",
-    description: "Building production-ready responsive web apps, creating Figma design systems, and contributing to open-source UI libraries with a focus on web performance (CWV) and WCAG accessibility."
-  },
-  {
-    year: "2023 - 2024",
-    title: "Front-End Web Development Specialization",
-    subtitle: "Advanced JavaScript & Modern CSS Mastery",
-    description: "Deepened core computer science foundations in Vanilla JavaScript (ES6+), asynchronous APIs, DOM manipulation, responsive layouts (CSS Grid, Flexbox), and Git version control workflows."
-  },
-  {
-    year: "2023",
-    title: "UI/UX Design Foundation Certification",
-    subtitle: "Figma, User Research & Design Systems",
-    description: "Completed intensive training on human-centered design, wireframing, high-fidelity interactive prototyping, design tokens, color theory, and typographic hierarchy."
+    quote: "The Talking Dictionary project stands out because of Nisha's commitment to accessibility and solving real problems for disabled students. Her blending of IT and MBA vision creates impactful results.",
+    author: "Peer Collaborator",
+    role: "Software Developer",
+    company: "Tech Innovation Guild",
+    avatar: "PC"
   }
 ];

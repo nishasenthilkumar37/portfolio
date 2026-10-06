@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="news-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#be185d" />
+      <stop offset="50%" stop-color="#db2777" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="url(#news-bg)"/>
+
+  <g transform="translate(60, 40)">
+    <!-- Main App Container -->
+    <rect width="680" height="420" rx="14" fill="#0f0728" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <!-- Controls -->
+    <circle cx="25" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="22" r="5" fill="#eab308"/>
+    <circle cx="59" cy="22" r="5" fill="#22c55e"/>
+    <text x="340" y="26" fill="#f472b6" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" text-anchor="middle">News Headlines - Android &amp; Web Platform [Lead: Nisha S]</text>
+
+    <!-- Breaking News Live Ticker -->
+    <g transform="translate(30, 48)">
+      <rect width="620" height="38" rx="8" fill="#1e1035" stroke="#ec4899" stroke-width="1.2"/>
+      <rect x="10" y="8" width="105" height="22" rx="4" fill="#ef4444"/>
+      <text x="62" y="23" fill="#ffffff" font-size="9" font-family="sans-serif" font-weight="900" text-anchor="middle">🔴 BREAKING NEWS</text>
+      <text x="130" y="23" fill="#fbcfe8" font-size="11" font-family="sans-serif">Global Tech &amp; AI Summits Announce Major Distributed Computing Standards...</text>
+    </g>
+
+    <!-- Dual Layout: Mobile App Preview (Left) + Web Grid Dashboard (Right) -->
+    <!-- Mobile Device Simulator -->
+    <g transform="translate(35, 100)">
+      <rect width="180" height="295" rx="20" fill="#1b1238" stroke="#f472b6" stroke-width="2"/>
+      <!-- Mobile Notch -->
+      <rect x="65" y="6" width="50" height="8" rx="4" fill="#0f0728"/>
+      <!-- Mobile Header -->
+      <text x="20" y="35" fill="#ffffff" font-size="12" font-family="sans-serif" font-weight="bold">Top Headlines</text>
+      <circle cx="155" cy="30" r="10" fill="#db2777"/>
+      <!-- Mobile News Cards -->
+      <rect x="15" y="50" width="150" height="65" rx="6" fill="#2a1b4e"/>
+      <rect x="25" y="60" width="100" height="8" rx="3" fill="#f472b6"/>
+      <rect x="25" y="74" width="130" height="5" rx="2" fill="#94a3b8"/>
+      <rect x="25" y="84" width="80" height="5" rx="2" fill="#94a3b8"/>
+      <rect x="25" y="96" width="45" height="12" rx="3" fill="#ec4899" fill-opacity="0.3"/>
+
+      <rect x="15" y="125" width="150" height="65" rx="6" fill="#2a1b4e"/>
+      <rect x="25" y="135" width="110" height="8" rx="3" fill="#38bdf8"/>
+      <rect x="25" y="149" width="130" height="5" rx="2" fill="#94a3b8"/>
+      <rect x="25" y="159" width="90" height="5" rx="2" fill="#94a3b8"/>
+
+      <rect x="15" y="200" width="150" height="65" rx="6" fill="#2a1b4e"/>
+      <rect x="25" y="210" width="95" height="8" rx="3" fill="#34d399"/>
+      <rect x="25" y="224" width="130" height="5" rx="2" fill="#94a3b8"/>
+
+      <!-- Home bar -->
+      <rect x="65" y="280" width="50" height="4" rx="2" fill="#fbcfe8"/>
+    </g>
+
+    <!-- Web Dashboard Cards (Right) -->
+    <g transform="translate(235, 100)">
+      <!-- Main Featured Article -->
+      <rect width="415" height="135" rx="10" fill="#1b1238"/>
+      <rect x="15" y="15" width="140" height="105" rx="8" fill="#381b5c"/>
+      <circle cx="85" cy="65" r="24" fill="#ec4899" fill-opacity="0.5"/>
+      <text x="170" y="35" fill="#f472b6" font-size="13" font-family="sans-serif" font-weight="bold">Experimental Learning Model</text>
+      <text x="170" y="55" fill="#e2e8f0" font-size="11" font-family="sans-serif">Engineered responsive asynchronous API</text>
+      <text x="170" y="70" fill="#e2e8f0" font-size="11" font-family="sans-serif">feeds for fast mobile headline parsing.</text>
+      <rect x="170" y="90" width="85" height="22" rx="4" fill="#db2777"/>
+      <text x="212" y="104" fill="#ffffff" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">Project Lead</text>
+      <rect x="265" y="90" width="95" height="22" rx="4" fill="#7c3aed"/>
+      <text x="312" y="104" fill="#ffffff" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">Android &amp; Web</text>
+    </g>
+
+    <!-- Metrics Row -->
+    <g transform="translate(235, 250)">
+      <rect width="130" height="145" rx="8" fill="#1b1238"/>
+      <text x="15" y="30" fill="#38bdf8" font-size="11" font-family="sans-serif" font-weight="bold">Real-Time Sync</text>
+      <text x="15" y="65" fill="#ffffff" font-size="24" font-family="sans-serif" font-weight="900">&lt;200ms</text>
+      <text x="15" y="90" fill="#94a3b8" font-size="10" font-family="sans-serif">Feed parsing</text>
+      <rect x="15" y="110" width="100" height="6" rx="3" fill="#38bdf8"/>
+
+      <rect x="142" y="0" width="130" height="145" rx="8" fill="#1b1238"/>
+      <text x="157" y="30" fill="#34d399" font-size="11" font-family="sans-serif" font-weight="bold">Multi-Category</text>
+      <text x="157" y="65" fill="#ffffff" font-size="24" font-family="sans-serif" font-weight="900">8+ Hubs</text>
+      <text x="157" y="90" fill="#94a3b8" font-size="10" font-family="sans-serif">Tech, Biz, Sports</text>
+      <rect x="157" y="110" width="100" height="6" rx="3" fill="#34d399"/>
+
+      <rect x="285" y="0" width="130" height="145" rx="8" fill="#1b1238"/>
+      <text x="300" y="30" fill="#f59e0b" font-size="11" font-family="sans-serif" font-weight="bold">Team Output</text>
+      <text x="300" y="65" fill="#ffffff" font-size="24" font-family="sans-serif" font-weight="900">100%</text>
+      <text x="300" y="90" fill="#94a3b8" font-size="10" font-family="sans-serif">On-time sprint</text>
+      <rect x="300" y="110" width="100" height="6" rx="3" fill="#f59e0b"/>
+    </g>
+  </g>
+</svg>

@@ -1,32 +1,34 @@
-# 🚀 Professional Personal Portfolio Website
+# 🚀 Nisha S — Professional Portfolio Website
 
-A modern, responsive, and accessible personal portfolio website built with pure semantic **HTML5**, **CSS3 (Custom Properties & Modern Layouts)**, and modular **Vanilla JavaScript (ES6+)**. Specifically tailored for beginner web designers and front-end developers to showcase design systems, interactive web applications, and UI/UX case studies.
+**BSc (Information Technology) & MBA Scholar | Front-End Developer & Tech Strategist**
+
+A high-performance personal portfolio website built with pure semantic **HTML5**, **CSS3 (Custom Properties, Cyber-Luxe Glassmorphism)**, and modular **Vanilla JavaScript (ES6+)**.
 
 ---
 
-## ✨ Key Features
+## ✨ Highlights & New Visual Features
 
-- 🎨 **Theme & Accent Color Engine**:
-  - Dark / Light mode toggle with `localStorage` persistence and system preference detection (`prefers-color-scheme`).
-  - Interactive Accent Color Picker (Indigo, Emerald, Cyan, Violet, Rose, Amber) with live CSS variable propagation.
-- ⚡ **Interactive Hero Section**:
-  - Dynamic typewriter role rotator (*Front-End Developer*, *UI/UX Web Designer*, *Figma & Design Systems Builder*, etc.).
-  - Pulsing live availability badge.
-  - Animated stats counters (*15+ Projects*, *100% Responsive*, *40+ Components*, *98% Lighthouse*).
-- 🧩 **Curated Case Studies & Filterable Projects**:
-  - Filter by category (*All*, *Web Apps & Front-End*, *Design Systems*, *UI/UX & Prototypes*).
-  - Deep-dive interactive modal dialog (`<dialog>`) detailing Project Overviews, Challenges, Solutions, Metrics, and Live Demo / GitHub / Figma links.
-- 📊 **Skills & Technical Matrix**:
-  - Animated proficiency indicators triggered by `IntersectionObserver`.
-  - Categorized into UI/UX Design, Front-End Development, and Workflow / Developer Tools.
-- 🛤️ **Process & Learning Journey (Timeline)**:
-  - 4-step creative process from discovery to deployment.
-  - Interactive career & education milestone timeline.
-- 💬 **Interactive Contact Form & Feedback**:
-  - Live client-side validation, live character counter, simulated loading feedback, and one-click "Copy Email" button.
-- ♿ **Accessibility & Performance First**:
-  - Semantic HTML landmarks, ARIA attributes, `:focus-visible` styling, and `prefers-reduced-motion` compliance.
-  - 100% self-contained SVG graphics — no broken external image links.
+- 👩‍💻 **Animated Person Avatar**:
+  - Custom interactive vector SVG with animated breathing motion, floating tech badges (`🎓 MBA Leader`, `🐍 Python / SQL`, `⚡ Web Dev / UI`, `☕ Java & Apps`), and pulsing cyber aura glow.
+- 🎨 **Cyber Luxury Color Engine & Palette Switcher**:
+  - Live color palette switching between **Cyber Violet**, **Neon Rose**, **Mint Teal**, **Sky Sapphire**, and **Royal Gold**.
+  - Animated particle canvas background for depth and motion.
+- 📄 **Interactive Resume Viewer**:
+  - Click the **"📄 Resume"** button on the navbar to view Nisha's full academic and professional resume with one-click **"🖨️ Print / Save PDF"**.
+- 🎓 **Education & Academics Showcase**:
+  - **MBA (Master of Business Administration)** — Currently Pursuing (2024 - Present)
+  - **BSc (Information Technology)** — Emerald Heights College for Women's Ooty (CGPA: 7.8 / 10)
+  - **HSC (12th)** — Government Higher Secondary School, Thuneri (61%)
+  - **SSLC (10th)** — Government Higher Secondary School, Thuneri (76%)
+- 🛠️ **Real Resume Projects & Case Studies**:
+  - 🔊 **Talking Dictionary**: Voice-assisted lexical engine for rapid synonym/antonym recall with accessibility features for physically disabled learners.
+  - 📰 **News Headlines (Project Lead)**: Android & web application for live news categorization.
+  - 🌐 **Client-Server Architecture**: Co-curricular technical presentation and multi-tier system model.
+  - 📊 **MBA Business Analytics**: SQL-driven predictive sales and enterprise growth dashboard.
+  - 🎨 **Aura UI**: Accessible component library with WCAG AAA contrast compliance.
+- 📞 **Contact & Instant Copy Utilities**:
+  - One-click copy for email (`nishaofficial137@gmail.com`) and phone number (`+91 9360241665`).
+  - Direct links to LinkedIn profile (`linkedin.com/in/nisha-senthil-kumar-321440264`).
 
 ---
 
@@ -34,85 +36,19 @@ A modern, responsive, and accessible personal portfolio website built with pure 
 
 ```
 portfolio/
-├── index.html                   # Semantic HTML5 master document
-├── README.md                    # Documentation & setup guide
+├── index.html                           # Master semantic HTML5 document
+├── README.md                            # Documentation & overview
 ├── css/
-│   └── style.css                # Modular styles, custom properties, animations, & media queries
+│   └── style.css                        # Cyber-luxe styling, glassmorphism, animations & themes
 ├── js/
-│   ├── main.js                  # Theme engine, rotator, modal, form validation, & scrollspy
-│   └── projects-data.js         # Configurable projects, case studies, & testimonials data
+│   ├── main.js                          # Particle canvas, role rotator, resume modal & form logic
+│   └── projects-data.js                 # Nisha's projects, education & testimonials data
 └── assets/
     └── images/
-        ├── avatar.svg           # Developer character avatar
-        ├── project-aura-ui.svg  # Aura UI Design System visual
-        ├── project-novasphere.svg # Novasphere SaaS preview
-        ├── project-zenith-taskflow.svg # Zenith TaskFlow Kanban preview
-        ├── project-foodiehaven.svg # FoodieHaven recipe app preview
-        ├── project-ecotrack.svg # EcoTrack sustainability dashboard preview
-        └── project-pixelcraft.svg # PixelCraft studio preview
+        ├── avatar.svg                   # Animated developer avatar for Nisha S
+        ├── project-talking-dictionary.svg # Talking Dictionary visual
+        ├── project-news-headlines.svg   # News Headlines app visual
+        ├── project-client-server.svg    # Client-Server architecture visual
+        ├── project-mba-analytics.svg    # MBA Business Analytics visual
+        └── project-aura-ui.svg          # Aura UI Design System visual
 ```
-
----
-
-## 🛠️ How to Customize
-
-### 1. Update Your Name, Bio, and Social Links
-Open [`index.html`](index.html) and search for:
-- Replace `Alex Rivers` with your real name.
-- Replace `alex.developer@example.com` with your email.
-- Update your social links:
-  - GitHub: `https://github.com/yourusername`
-  - LinkedIn: `https://linkedin.com/in/yourusername`
-  - Figma: `https://figma.com/@yourusername`
-
-### 2. Add or Edit Projects
-Open [`js/projects-data.js`](js/projects-data.js) to easily edit or add new project cards. Each project object contains:
-```javascript
-{
-  id: "my-new-project",
-  title: "Project Title",
-  tagline: "Short tagline",
-  category: "web-app", // 'web-app', 'design-system', or 'ui-ux'
-  categoryLabel: "Front-End & UI",
-  image: "assets/images/your-screenshot.png",
-  badge: "Featured",
-  shortDesc: "Brief card description...",
-  fullDesc: "Detailed overview...",
-  role: "Front-End Developer",
-  duration: "2 Weeks",
-  metrics: "Key outcomes & performance stats...",
-  challenge: "What problem was solved...",
-  solution: "Technical & design implementation...",
-  tags: ["HTML5", "CSS3", "JavaScript"],
-  demoUrl: "https://your-live-demo.com",
-  githubUrl: "https://github.com/yourusername/repo",
-  figmaUrl: "https://figma.com/file/..."
-}
-```
-
-### 3. Replace Avatar or Images
-You can replace `assets/images/avatar.svg` with your own profile photo (`.png`, `.jpg`, `.webp`) by placing it in `assets/images/` and updating the `src` attribute in [`index.html`](index.html).
-
----
-
-## 🌐 Free Deployment Options
-
-### Option A: GitHub Pages (Recommended)
-1. Initialize a git repository and commit your files:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio commit"
-   ```
-2. Create a repository on GitHub (e.g. `portfolio` or `<your-username>.github.io`).
-3. Push your code:
-   ```bash
-   git remote add origin https://github.com/<your-username>/portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-4. Go to **Settings > Pages** on your GitHub repo and select `main` branch root (`/`). Your site will be live at `https://<your-username>.github.io/portfolio` in seconds!
-
-### Option B: Vercel / Netlify
-1. Drag and drop the `portfolio` folder directly into [Vercel](https://vercel.com) or [Netlify Drop](https://app.netlify.com/drop).
-2. It will deploy automatically with zero build configuration needed.
